@@ -40,7 +40,7 @@ export function tableTemplate(rowsCount = 15) {
       .map(el => toColumn(el))
       .join('')
   // generate first row
-  rows.push(createRow(cols))
+  rows.push(createRow(cols) )
 
   for (let i = 0; i < rowsCount; i++) {
     const cells = new Array(colsCount)
